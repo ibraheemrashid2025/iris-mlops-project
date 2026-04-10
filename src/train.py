@@ -3,6 +3,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import mlflow
+mlflow.set_tracking_uri("http://localhost:5000")
 import mlflow.sklearn
 
 # 1. Data Ingest [cite: 12]
