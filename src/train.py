@@ -18,4 +18,4 @@ with mlflow.start_run():
     
     mlflow.sklearn.log_model(rf, "iris_model")
     print("Model trained and logged to MLflow!")
-    # Live demo for presentation
+   print("Testing Jenkins Email Notification and Console Logs!")
