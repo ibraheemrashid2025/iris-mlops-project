@@ -3,8 +3,9 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import mlflow
-mlflow.set_tracking_uri("http://localhost:5000")
 import mlflow.sklearn
+
+mlflow.set_tracking_uri("http://localhost:5000")
 
 iris = load_iris()
 X = pd.DataFrame(iris.data, columns=iris.feature_names)
@@ -18,4 +19,4 @@ with mlflow.start_run():
     
     mlflow.sklearn.log_model(rf, "iris_model")
     print("Model trained and logged to MLflow!")
-   print("Testing Jenkins Email Notification and Console Logs!")
+    print("Testing Jenkins Email Notification and Console Logs!")
