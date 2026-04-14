@@ -12,7 +12,7 @@ pipeline {
             when { branch 'dev' }
             steps {
                 echo 'Ingesting Data and Training Model...'
-                sh 'python3 train.py'
+                sh 'python3 src/train.py'
                 echo 'Model Trained and Registered as Challenger.'
             }
         }
