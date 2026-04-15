@@ -1,4 +1,3 @@
-import os
 
 # Content for the README.md file
 readme_content = """# 🌸 Iris MLOps End-to-End Pipeline
